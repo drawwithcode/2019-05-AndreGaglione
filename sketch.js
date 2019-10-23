@@ -21,7 +21,7 @@ function draw() {
   fill('white');
   text(myText, width/2, pmouseY+height/3);
 
-
+  var inverted_height = -height;
   var myFeed = capture.loadPixels();
 
   //moving pretty unlogically the camera inside the space
@@ -41,8 +41,9 @@ function draw() {
       image(myFeed, mouseX, mouseY, windowWidth/(mouseY/10) + width/8, windowHeight/(mouseX/10)+ inverted_height/8);
     }
   }
-  fill("white")
-  rect(0,0,mouseX,mouseY);
 
 
 }
+
+
+//Object
